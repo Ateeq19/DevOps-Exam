@@ -30,7 +30,9 @@ jobs:
             # Pull the latest code
             git reset --hard
             git pull origin main
-
+            # Remove old containers if they exist
+            docker rm -f backend || true
+            docker rm -f frontend || true
             # Rebuild and restart Docker containers
             docker-compose down
             docker-compose build
