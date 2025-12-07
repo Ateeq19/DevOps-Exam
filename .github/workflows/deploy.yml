@@ -25,7 +25,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no azureuser@172.206.82.46 << 'EOF'
             # Navigate to project folder
-            cd /home/azureuser/ateeq/ateeq-devops-exam
+            cd /home/azureuser/ateeq/ateeq-devops-exam/DevOps-Exam
 
             # Pull the latest code
             git reset --hard
